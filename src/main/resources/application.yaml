@@ -4,8 +4,8 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:${DATABASE_URL}
-    username: dhanjaltzlwmua
-    password: 0e6502c598d8e5d706129d3267c220325b6b1864f60a77bb578dea32f9442589
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
 # JPA properties
   jpa:
     hibernate:
@@ -17,5 +17,5 @@ spring:
     generate-ddl: true
 
 camunda.bpm.admin-user:
-  id: demo
-  password: demo
+  id: ${CAMUNDA_ID}
+  password: ${CAMUNDA_PASSWORD}
