@@ -3,7 +3,7 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:$DATABASE_URL
+    url: jdbc:${DATABASE_URL}
     username: dhanjaltzlwmua
     password: 0e6502c598d8e5d706129d3267c220325b6b1864f60a77bb578dea32f9442589
 # JPA properties
